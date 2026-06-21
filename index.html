@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>把 claude -p 的工具扒光 · 省额度省到极致（订阅也能命中缓存）</title>
-<meta name="description" content="用本机 claude -p 给网页当纯聊天后端时，默认每句吃约 2.7 万 token。--tools none 扒光工具 + --system-prompt 换掉系统提示，砍到一两百；订阅也能命中提示缓存，省约 9 成。全程实测数字。">
+<title>把 claude -p 当 API 用 · 拿 Claude 订阅跑出 API 的效果（省额度 · 命中缓存）</title>
+<meta name="description" content="不想为聊天接口单独充 API 的钱？本机 claude -p 走的就是你的订阅额度——把它调成干净的纯聊天接口：--tools none 扒光工具 + --system-prompt 换掉系统提示，一句话从约 2.7 万 token 砍到一两百；订阅也能命中提示缓存省约 9 成。等于拿订阅跑出 API 的效果。全程实测数字。">
 <style>
   :root{
     --bg:#faf6f1; --card:#fffdfb; --ink:#3f3531; --muted:#7a6b63; --faint:#a99a90;
@@ -74,12 +74,12 @@
 <div class="wrap">
 
 <header class="hero">
-  <div class="kicker">claude -p · save tokens · prompt cache</div>
-  <h1>把 <code style="font-size:.8em">claude&nbsp;-p</code> 的工具扒光，省额度省到极致</h1>
-  <p class="lede">用本机 <code>claude&nbsp;-p</code>（终端 Claude Code 本人，走你自己的订阅）给网页当<strong>纯聊天</strong>后端时，
-  它默认是个完整 agent，每句话都把整套工具说明书塞进输入——<strong>约 2.7 万 token</strong>。
-  纯聊天用不着工具：<strong>扒光工具 + 换掉系统提示</strong>，一句话砍到<strong>一两百 token</strong>；
-  再让稳定前缀<strong>命中缓存</strong>（订阅也命中，省约 9 成）。每个数字都是当场实测的。</p>
+  <div class="kicker">claude -p · 拿订阅当 api 用 · save tokens · cache</div>
+  <h1>把 <code style="font-size:.8em">claude&nbsp;-p</code> 当 API 用：拿订阅跑出 API 的效果</h1>
+  <p class="lede">不想为聊天接口再单独充 API 的钱？本机 <code>claude&nbsp;-p</code>（终端 Claude Code 本人）走的就是你<strong>已经付过的订阅额度</strong>——
+  把它调成一个干净的<strong>纯聊天接口</strong>就行。它默认是个完整 agent，每句话都把整套工具说明书塞进输入（<strong>约 2.7 万 token</strong>）；
+  纯聊天用不着：<strong>扒光工具 + 换掉系统提示</strong>，一句话砍到<strong>一两百 token</strong>，再让稳定前缀<strong>命中缓存</strong>（订阅也命中，省约 9 成）。
+  等于拿订阅跑出了 API 的效果——每个数字都是当场实测的。</p>
   <p style="margin:16px 0 0;font-family:var(--serif);font-size:15px;color:var(--seal)">—— 作者 · 离</p>
   <div style="margin-top:18px">
     <span class="pill">--tools none</span><span class="pill">--system-prompt</span>

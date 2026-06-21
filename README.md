@@ -1,4 +1,6 @@
-# 把 `claude -p` 的工具扒光，省额度省到极致（订阅也能命中缓存）
+# 把 `claude -p` 当 API 用：拿 Claude 订阅跑出 API 的效果
+
+> 不想为聊天接口再单独充 API 的钱？本机 `claude -p` 走的就是你已经付过的**订阅额度**——把它调成一个干净的**纯聊天接口**：扒光工具省额度、还能命中缓存，等于拿订阅跑出了 API 的效果（省钱·命中缓存）。
 
 **作者 · 离**　｜　🔗 在线预览（GitHub Pages）：<https://sanqianzilanyue-commits.github.io/claude-p-save-tokens/>
 
