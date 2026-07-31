@@ -2,7 +2,7 @@
 
 > 不想为聊天接口再单独充 API 的钱？本机 `claude -p` 走的就是你已经付过的**订阅额度**——把它调成一个干净的**纯聊天接口**：扒光工具省额度、还能命中缓存，等于拿订阅跑出了 API 的效果（省钱·命中缓存）。
 
-**作者 · 离**　｜　🔗 在线预览（GitHub Pages）：<https://sanqianzilanyue-commits.github.io/claude-p-save-tokens/>
+**作者 · 离**　｜　🔗 在线预览（GitHub Pages）：<https://sanqianzilanyue.github.io/claude-p-save-tokens/>
 
 > 用本机 `claude -p`（终端 Claude Code 本人，走你自己的 Claude 订阅）给网页当后端做**纯聊天**时，
 > 它默认是个「完整 agent」——每次都把**一整套工具说明书**塞进输入，一句话也要吃 **约 2.7 万 token**。
@@ -154,7 +154,7 @@ chat("陪我聊聊天", (t) => { box.textContent = t; });
 ```
 
 > 想顺带把模型「开口前的真思维链」也流出来？那是另一篇专门讲的事，参见
-> [claude-p-thinking-stream](https://sanqianzilanyue-commits.github.io/claude-p-thinking-stream/)。本篇专心省钱。
+> [claude-p-thinking-stream](https://sanqianzilanyue.github.io/claude-p-thinking-stream/)。本篇专心省钱。
 
 ---
 
