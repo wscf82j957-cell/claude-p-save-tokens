@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>本机对话</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>本机对话</h1>
+      <p>这是你自己电脑上的页面，用来把文字交给这台电脑里已经登录的 Claude Code。它不是官方网站，也不冒充任何官方界面。</p>
+    </header>
+    <section class="notice">
+      <p>电脑要开着、醒着，并且能上网。这台服务默认只在电脑自己的浏览器里打开。</p>
+      <p>手机要先和电脑连同一个 Wi-Fi，并且电脑上用 <code>--lan</code> 重新启动。出门以后，这个地址不能用。外出访问要另外准备安全路径，本页面做不到。</p>
+    </section>
+    <section class="login">
+      <label for="token">本机口令</label>
+      <input id="token" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="从电脑上的口令文件抄过来">
+      <button id="connect" type="button">连接</button>
+      <p id="status" role="status">还没有连接。</p>
+    </section>
+    <section id="log" class="log" aria-live="polite"></section>
+    <form id="composer">
+      <label for="text" class="sr">要说的话</label>
+      <textarea id="text" rows="3" placeholder="输入后发送。之前几轮会一起送出，但电脑上的服务不保存。"></textarea>
+      <div class="row">
+        <button id="send" type="submit">发送</button>
+        <button id="clear" type="button">清空对话</button>
+      </div>
+    </form>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
