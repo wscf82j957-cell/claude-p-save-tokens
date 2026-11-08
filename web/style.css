@@ -1,0 +1,64 @@
+:root {
+  color-scheme: light;
+  font-family: "Iowan Old Style", Palatino, "Songti SC", serif;
+  background: #f4f1ea;
+  color: #241f1a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+}
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+p { line-height: 1.55; }
+.notice, .login, .log, form {
+  background: #fffdf8;
+  border: 1px solid #ddd4c6;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px 0;
+}
+label { display: block; font-weight: 700; margin-bottom: 6px; }
+input, textarea, button {
+  font: inherit;
+  font-size: 1rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c9bfb0;
+  border-radius: 10px;
+  background: #fff;
+}
+button {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #241f1a;
+  background: #241f1a;
+  color: #fffdf8;
+}
+button.secondary, #clear {
+  background: #fffdf8;
+  color: #241f1a;
+}
+.row { display: flex; gap: 8px; margin-top: 8px; }
+.row button { flex: 1; }
+.log { min-height: 8rem; }
+.bubble { margin: 8px 0; white-space: pre-wrap; word-break: break-word; }
+.bubble.user { color: #241f1a; }
+.bubble.assistant { color: #3d4a3a; }
+.meta { color: #6d645b; font-size: 0.85rem; }
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+code { font-family: ui-monospace, monospace; font-size: 0.95em; }
